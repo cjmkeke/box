@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class boxSave extends AppCompatActivity {
 
@@ -39,7 +40,6 @@ public class boxSave extends AppCompatActivity {
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
                     String data1 = et_1.getText().toString();
                     String data2 = et_2.getText().toString();
                     String data3 = et_3.getText().toString();
@@ -49,6 +49,7 @@ public class boxSave extends AppCompatActivity {
                     int result2 = Integer.parseInt(data2);
                     int result3 = Integer.parseInt(data3);
                     int result4 = Integer.parseInt(data4);
+                try {
 
 
                     if (result1 == 0){
@@ -80,7 +81,9 @@ public class boxSave extends AppCompatActivity {
 
 
                 }catch (Exception e){
-
+                    if(result1 == 0 || result4 == 0){
+                        Toast.makeText(boxSave.this, "1번 항목과 4번 항목은 필수 값입니다.", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
 
