@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".boxSave">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_main_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="박스 정보를 기입하세요." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_0"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="코드 (선택)" />
+
+        <EditText
+            android:id="@+id/et_0"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:hint="코드 또는 품명"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="박스 수량" />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="박스 개입수" />
+
+        <EditText
+            android:id="@+id/et_2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="박스 잔량" />
+
+        <EditText
+            android:id="@+id/et_3"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="파렛트 수량" />
+
+        <EditText
+            android:id="@+id/et_4"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:text="0"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="empty" />
+
+        <EditText
+            android:id="@+id/et_5"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="empty" />
+
+        <EditText
+            android:id="@+id/et_6"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="empty" />
+
+        <EditText
+            android:id="@+id/et_7"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="80dp"
+            android:text="저장 또는 출력" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="10dp"
+            android:text="저장 또는 출력" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/font"
+            android:gravity="center_vertical"
+            android:text="결과" />
+    </LinearLayout>
+</LinearLayout>
