@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_list_move;
     Button btn_save_move;
+    Button btn_listboard;
 
 
     @Override
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_save_move = findViewById(R.id.btn_save_move);
         btn_list_move = findViewById(R.id.btn_list_move);
+        btn_listboard = findViewById(R.id.btn_listboard);
 
 
         btn_list_move.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, boxSave.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_listboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, listboard.class);
                 startActivity(intent);
             }
         });

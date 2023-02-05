@@ -1,5 +1,7 @@
 package com.app.box;
 
+import static com.app.box.R.*;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -9,6 +11,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class boxSave extends AppCompatActivity {
 
     private EditText et_0;
@@ -16,30 +21,43 @@ public class boxSave extends AppCompatActivity {
     private EditText et_2;
     private  EditText et_3;
     private  EditText et_4;
+    private  EditText et_5; // empty
+    private  EditText et_6; // empty
+    private  EditText et_7; // empty
+
     private TextView tv_result;
     private  Button btn_save;
     private  Button btn_delete;
     private static String strResult;
+    private String code;
+
+
+    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference conditionRef = mRootRef.child("CODE");
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_box_save);
+        setContentView(layout.activity_box_save);
 
-        et_0 = findViewById(R.id.et_0);
-        et_1 = findViewById(R.id.et_1);
-        et_2 = findViewById(R.id.et_2);
-        et_3 = findViewById(R.id.et_3);
-        et_4 = findViewById(R.id.et_4);
-        tv_result = findViewById(R.id.tv_result);
-        btn_save = findViewById(R.id.btn_save);
-        btn_delete = findViewById(R.id.btn_delete);
+        et_0 = findViewById(id.et_0);
+        et_1 = findViewById(id.et_1);
+        et_2 = findViewById(id.et_2);
+        et_3 = findViewById(id.et_3);
+        et_4 = findViewById(id.et_4);
+        et_5 = findViewById(id.et_5);
+        et_6 = findViewById(id.et_6);
+        et_7 = findViewById(id.et_7);
+        tv_result = findViewById(id.tv_result);
+        btn_save = findViewById(id.btn_back);
+        btn_delete = findViewById(id.btn_delete);
 
 
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
                     String data1 = et_1.getText().toString();
                     String data2 = et_2.getText().toString();
                     String data3 = et_3.getText().toString();
@@ -49,8 +67,6 @@ public class boxSave extends AppCompatActivity {
                     int result2 = Integer.parseInt(data2);
                     int result3 = Integer.parseInt(data3);
                     int result4 = Integer.parseInt(data4);
-                try {
-
 
                     if (result1 == 0){
                         int int1 = result2 * result4 + result3;
@@ -75,15 +91,24 @@ public class boxSave extends AppCompatActivity {
                         String str5 = String.valueOf(int7);
                         strResult = str5;
                     }
-
                     tv_result.setText("총 수량 : "+strResult);
+                    code = et_0.getText().toString();
 
 
-
-                }catch (Exception e){
-                    if(result1 == 0 || result4 == 0){
-                        Toast.makeText(boxSave.this, "1번 항목과 4번 항목은 필수 값입니다.", Toast.LENGTH_SHORT).show();
+                    if(et_0.getText().toString().equals(null) || code.equals("")){
+                        Toast.makeText(boxSave.this, "데이터를 저장하려면 코드 또는 품명은 필수 값입니다.", Toast.LENGTH_SHORT).show();
+                    }else{
+                    conditionRef.child(code).child("코드").setValue(et_0.getText().toString());
+                    conditionRef.child(code).child("박스 수량").setValue(et_1.getText().toString());
+                    conditionRef.child(code).child("박스 개입수").setValue(et_2.getText().toString());
+                    conditionRef.child(code).child("박스 잔량").setValue(et_3.getText().toString());
+                    conditionRef.child(code).child("파렛트 수량").setValue(et_4.getText().toString());
+                    conditionRef.child(code).child("empty1").setValue(et_5.getText().toString());
+                    conditionRef.child(code).child("empty2").setValue(et_6.getText().toString());
+                    conditionRef.child(code).child("empty3").setValue(et_7.getText().toString());
                     }
+                }catch (Exception e){
+
                 }
 
 

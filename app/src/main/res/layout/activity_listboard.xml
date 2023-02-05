@@ -14,22 +14,6 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_main_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="50dp"
-            android:fontFamily="@font/font"
-            android:gravity="center_vertical"
-            android:text="박스 정보를 기입하세요." />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="40dp">
 
         <TextView
@@ -43,20 +27,18 @@
             android:gravity="center_vertical"
             android:text="코드 (선택)" />
 
-        <EditText
-            android:id="@+id/et_0"
+        <TextView
+            android:id="@+id/board_tv_view_0"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape_code"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape_code"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:hint="코드 또는 품명"
-            android:inputType="text"
             android:paddingStart="10dp"
-            android:textSize="14sp"
             android:textColor="@color/white"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,19 +56,17 @@
             android:gravity="center_vertical"
             android:text="박스 수량" />
 
-        <EditText
-            android:id="@+id/et_1"
+        <TextView
+            android:id="@+id/board_tv_view_1"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:text="0"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -104,21 +84,20 @@
             android:gravity="center_vertical"
             android:text="박스 개입수" />
 
-        <EditText
-            android:id="@+id/et_2"
+        <TextView
+            android:id="@+id/board_tv_view_2"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:text="0"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
@@ -134,19 +113,17 @@
             android:gravity="center_vertical"
             android:text="박스 잔량" />
 
-        <EditText
-            android:id="@+id/et_3"
+        <TextView
+            android:id="@+id/board_tv_view_3"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:text="0"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -164,19 +141,16 @@
             android:gravity="center_vertical"
             android:text="파렛트 수량" />
 
-        <EditText
-            android:id="@+id/et_4"
+        <TextView
+            android:id="@+id/board_tv_view_4"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:text="0"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -194,18 +168,17 @@
             android:gravity="center_vertical"
             android:text="empty" />
 
-        <EditText
-            android:id="@+id/et_5"
+        <TextView
+            android:id="@+id/board_tv_view_5"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -223,18 +196,16 @@
             android:gravity="center_vertical"
             android:text="empty" />
 
-        <EditText
-            android:id="@+id/et_6"
+        <TextView
+            android:id="@+id/board_tv_view_6"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -252,56 +223,31 @@
             android:gravity="center_vertical"
             android:text="empty" />
 
-        <EditText
-            android:id="@+id/et_7"
+        <TextView
+            android:id="@+id/board_tv_view_7"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical"
+            android:background="@drawable/textview_shape"
             android:ems="10"
             android:fontFamily="@font/font"
-            android:inputType="number"
             android:paddingStart="10dp"
-            android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp">
-
-        <Button
-            android:id="@+id/btn_delete"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginStart="80dp"
-            android:text="저장 또는 출력" />
 
         <Button
             android:id="@+id/btn_back"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginStart="10dp"
-            android:text="저장 또는 출력" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:text="뒤로가기" />
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_result"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="50dp"
-            android:fontFamily="@font/font"
-            android:gravity="center_vertical"
-            android:text="결과" />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
