@@ -7,34 +7,174 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="246dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/kakaotalk_20230207_165139695_01" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
         android:orientation="vertical"></LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_list_move"
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-            android:text="리스트 보기" />
+            android:id="@+id/btm_listview"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_selector_orenge"
+            android:fontFamily="@font/font"
+            android:text="리스트 보기"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btn_save_move"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:text="수량 저장" />
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_selector_orenge"
+            android:fontFamily="@font/font"
+            android:text="수량 저장 및 계산"
+            android:textColor="@color/white"
+
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btn_listboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector_orenge"
+            android:fontFamily="@font/font"
+            android:text="아이템 검색"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="9dp"
+            android:fontFamily="@font/font"
+            android:gravity="center|left"
+            android:text="ID"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:hint="아이디를 입력하세요"
+            android:inputType="text"
+            android:paddingStart="7dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_pw"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/images"
+            android:drawablePadding="9dp"
+            android:fontFamily="@font/font"
+            android:gravity="center|left"
+            android:text="PW"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:fontFamily="@font/font"
+            android:hint="비밀번호를 입력하세요."
+            android:inputType="textPassword"
+            android:paddingStart="7dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="10dp"
+    android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_data_delete"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector_yellow"
+            android:fontFamily="@font/font"
+            android:text="입력"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvview1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:paddingStart="50dp"-->
+<!--        android:gravity="center|left"-->
+<!--        android:text="TextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvview2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:paddingStart="50dp"-->
+<!--        android:gravity="center|left"-->
+<!--        android:text="TextView" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_view_db1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:paddingStart="50dp"-->
+<!--        android:gravity="center|left"-->
+<!--        android:text="TextView" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_view_db2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:paddingStart="50dp"-->
+<!--        android:gravity="center|left"-->
+<!--        android:text="TextView" />-->
+
 </LinearLayout>
